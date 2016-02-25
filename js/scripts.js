@@ -8,9 +8,11 @@ var tritype = function(side1, side2, side3) {
 } else   {
         return "this is not a triangle"
   }
+}
 
 $(document).ready(function() {
   $("form#triangles").submit(function(event) {
+
     var side1 = parseInt($("input#side1").val());
     var side2 = parseInt($("input#side2").val());
     var side3 = parseInt($("input#side3").val());
@@ -18,9 +20,9 @@ $(document).ready(function() {
 
     $(".tritype").text(result);
 
-    $(".result").show();
+    $("#result").show();
 
     event.preventDefault();
+
   })
 });
-};
