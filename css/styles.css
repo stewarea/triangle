@@ -1,4 +1,11 @@
-#result {
+#equil{
+  display: none;
+}
+#iso {
+  display: none;
+}
+
+#scalene {
   display: none;
 }
 #error {
